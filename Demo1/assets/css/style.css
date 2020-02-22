@@ -1318,6 +1318,8 @@ margin-top: 10px;
 }
 .testimonial_area .sec-title{
   margin-bottom: 10px;
+  max-width: 546px;
+
 }
 .testimonial_area .testimonial_slider {
   max-width: 810px;
