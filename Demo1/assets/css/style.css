@@ -1346,6 +1346,7 @@ margin-top: 10px;
 .testimonial_area .testimonial_slider .item .auther-img img {
   width: auto;
   display: inline-block;
+  width: 100px;
 }
 
 .testimonial_area .testimonial_slider .item p {
