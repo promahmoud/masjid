@@ -11,6 +11,7 @@
     animateOut: 'fadeOut',
     items: 1,
     // smartSpeed: 1000,
+    autoplayHoverPause: true,
     autoplay: true,
     // autoplayTimeout: 8000,
     // autoplaySpeed: 1000,
