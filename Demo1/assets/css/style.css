@@ -1311,10 +1311,14 @@ margin-top: 10px;
 /*testimonial_area css
 ================================================================*/
 .testimonial_area {
-  padding: 70px 0px 82px;
+  padding: 70px 0px;
   position: relative;
+  background: #f6f8fa;
+  background: #fdfdfd;
 }
-
+.testimonial_area .sec-title{
+  margin-bottom: 10px;
+}
 .testimonial_area .testimonial_slider {
   max-width: 810px;
   margin: 0 auto;
@@ -1415,7 +1419,7 @@ margin-top: 10px;
 }
 
 .testimonial_area .testimonial_slider .owl-dots {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .testimonial_area .testimonial_slider .owl-dots .owl-dot.active,
