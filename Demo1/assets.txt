@@ -1,0 +1,8 @@
+tab plugin:
+https://www.jqueryscript.net/layout/Easy-Animated-jQuery-Tabbed-Content-Plugin-Tabulous.html
+----
+tab plugin:
+https://tympanus.net/codrops/2014/03/21/responsive-full-width-tabs/
+----
+tab plugin:
+https://www.jqueryscript.net/other/tabs-tabbed-content.html
