@@ -1326,6 +1326,7 @@ ul {
 .download-btn-text {
   flex: 20;
 }
+.download-btn-text h4{font-size: 21px;}
 .download-btn-text p{margin-bottom: 0;}
 .download-btn:hover {
   border: 1px solid transparent;
