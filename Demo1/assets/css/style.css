@@ -1291,6 +1291,7 @@ ul {
 .download-area li {
   display: inline-block;
   width: 306px;
+  margin-bottom: 20px;
   /* margin-top: 40px; */
 }
 
@@ -1325,6 +1326,7 @@ ul {
 
 .download-btn-text {
   flex: 20;
+
 }
 .download-btn-text h4{font-size: 21px;}
 .download-btn-text p{margin-bottom: 0;}
