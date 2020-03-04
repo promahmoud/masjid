@@ -217,5 +217,20 @@
     $(thisAlert).removeClass('alert-validate');
   }
 
+  // masjid data
+  $(document).ready(function() {
+    $('#masjid-info-table').DataTable({
+      // disable sorting of one column in datatable
+      "aoColumnDefs": [
+        { "bSortable": false, "aTargets": [ 4 ] }, 
+        { "bSearchable": false, "aTargets": [ 4] }
+    ]
+    // "columnDefs": [
+    //   { "orderable": false, "targets": 5 }
+    // ]
+    });
 
+
+    
+  } );
 }(jQuery));

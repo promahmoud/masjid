@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- swiper CSS -->
     <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css
+    "/> -->
+    <link rel="stylesheet" href="assets/datatable/jquery.dataTables.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--[if lt IE 9]>
@@ -89,7 +93,8 @@
                 <div class="sab_banner_text text-center">
                     <h2>Masjid Data</h2>
                     <ul class="breadcrumb">
-                        <li class="item-home"><a class="bread-link bread-home" href="#" title="Homepage">Homepage</a>
+                        <li class="item-home">
+                            <a class="bread-link bread-home" href="#">Homepage</a>
                         </li>
                         <li class="item-current item-122"><strong class="bread-current bread-122">
                                 Masjid Data</strong>
@@ -115,285 +120,197 @@
                     </div>
                 </div>
             </div>
-            <div id="cover" class="main-search">
-                <form method="get" action="">
-                    <div class="tb">
-                        <div class="td">
-                            <input type="text" placeholder="Search by Masjid name / Area / Country" required>
-                        </div>
-                        <div class="td" id="s-cover">
-                            <button type="submit">
-                                <div id="s-circle"></div>
-                                <span></span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
         </div>
         <section class="masjid-data-sec">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="masjid-data-card">
-                            <figure>
-                                <a href="#">
-                                    <img src="assets/images/masjid/masjid-img1.jpg"
-                                        class="masjid-image " alt="">
-                                </a>
-                            </figure>
-                            <div class="masjid-desc">
-                                <div class="text-sec">
-                                    <!-- <i class="fas fa-street-view"></i> -->
-                                    <!-- <i class="fas fa-street-view"></i> -->
-                                    <h4><a href="#" data-toggle="modal" data-target="#exampleModal">Sutton Coldfield
-                                            Masjid </a></h4>
-                                    <h5> <i class="fas fa-street-view"></i> location</h5>
-                                    <ul>
-                                        <li>
-                                            <strong>Local Area :</strong>
-                                            <span>Access Via Anchorage Road</span>
-                                        </li>
-                                        <li>
-                                            <strong>Larger Area :</strong>
-                                            <span>Sutton Coldfield </span>
-                                        </li>
-                                        <li>
-                                            <strong>Country :</strong>
-                                            <span> <img
-                                                    src="https://www.masjid-timetable.com/admin/assets/img/flags/uk.png"
-                                                    alt=""> United Kingdom</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="more-btn">
-                                    <!-- Button trigger modal -->
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal"> More Details
-                                        <i class="fas fa-long-arrow-alt-right"></i>
+                <div class="table-responsive">
+                    <table id="masjid-info-table" class="table table-bordered table-dark  table-hover"
+                        style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Masjid Name
+                                </th>
+                                <th>Local Area</th>
+                                <th>larger Area</th>
+                                <th>Country</th>
+                                <th>
+                                    <i class="fas fa-plus-circle"></i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Al Falah Mosque
+                                </td>
+                                <td>System Architect</td>
+                                <td>Edinburgh</td>
+                                <td>country</td>
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!---End masjid data-->
-                    </div>
-                    <!---End col -->
-
-                    <div class="col-md-4">
-                        <div class="masjid-data-card">
-                            <figure>
-                                <img width="570" height="300"
-                                    src="assets/images/masjid/masjid-img1.jpg"
-                                    class="masjid-image " alt="">
-                            </figure>
-                            <div class="masjid-desc">
-                                <div class="text-sec">
-                                    <h4><a href="#" data-toggle="modal" data-target="#exampleModal">masjid name</a></h4>
-                                    <h5> <i class="fas fa-street-view"></i> location</h5>
-                                    <ul>
-                                        <li>
-                                            <strong>Local Area :</strong>
-                                            <span>Access Via Anchorage Road</span>
-                                        </li>
-                                        <li>
-                                            <strong>Larger Area :</strong>
-                                            <span>Sutton Coldfield </span>
-                                        </li>
-                                        <li>
-                                            <strong>Country :</strong>
-                                            <span> <img
-                                                    src="https://www.masjid-timetable.com/admin/assets/img/flags/uk.png"
-                                                    alt=""> United Kingdom</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="more-btn">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal"> More Details
-                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!---End masjid data-->
-                    </div>
-                    <!---End col -->
-
-                    <div class="col-md-4">
-                        <div class="masjid-data-card">
-                            <figure>
-                                <a href="#">
-                                    <img width="570" height="300"
-                                        src="assets/images/masjid/masjid-img2.jpg"
-                                        class="masjid-image " alt="">
-                                </a>
-                            </figure>
-                            <div class="masjid-desc">
-                                <div class="text-sec">
-                                    <h4><a href="#" data-toggle="modal" data-target="#exampleModal">masjid name</a></h4>
-                                    <h5> <i class="fas fa-street-view"></i> location</h5>
-                                    <ul>
-                                        <li>
-                                            <strong>Local Area :</strong>
-                                            <span>Access Via Anchorage Road</span>
-                                        </li>
-                                        <li>
-                                            <strong>Larger Area :</strong>
-                                            <span>Sutton Coldfield </span>
-                                        </li>
-                                        <li>
-                                            <strong>Country :</strong>
-                                            <span> <img
-                                                    src="https://www.masjid-timetable.com/admin/assets/img/flags/uk.png"
-                                                    alt=""> United Kingdom</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="more-btn">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal"> More Details
-                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!---End masjid data-->
-                    </div>
-                    <!---End col -->
-                    <div class="col-md-4">
-                        <div class="masjid-data-card">
-                            <figure>
-                                <a href="#">
-                                    <img width="570" height="300"
-                                        src="assets/images/masjid/masjid-img2.jpg"
-                                        class="masjid-image " alt="">
-                                </a>
-                            </figure>
-                            <div class="masjid-desc">
-                                <div class="text-sec">
-                                    <h4><a href="#" data-toggle="modal" data-target="#exampleModal">masjid name</a></h4>
-                                    <h5> <i class="fas fa-street-view"></i> location</h5>
-                                    <ul>
-                                        <li>
-                                            <strong>Local Area :</strong>
-                                            <span>Access Via Anchorage Road</span>
-                                        </li>
-                                        <li>
-                                            <strong>Larger Area :</strong>
-                                            <span>Sutton Coldfield </span>
-                                        </li>
-                                        <li>
-                                            <strong>Country :</strong>
-                                            <span> <img
-                                                    src="https://www.masjid-timetable.com/admin/assets/img/flags/uk.png"
-                                                    alt=""> United Kingdom</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="more-btn">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal"> More Details
-                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!---End masjid data-->
-                    </div>
-                    <!---End col -->
-
-                    <div class="col-md-4">
-                        <div class="masjid-data-card">
-                            <figure>
-                                <a href="#">
-                                    <img width="570" height="300"
-                                        src="assets/images/masjid/masjid-img2.jpg"
-                                        class="masjid-image " alt="">
-                                </a>
-                            </figure>
-                            <div class="masjid-desc">
-                                <div class="text-sec">
-                                    <h4><a href="#" data-toggle="modal" data-target="#exampleModal">masjid name</a></h4>
-                                    <h5> <i class="fas fa-street-view"></i> location</h5>
-                                    <ul>
-                                        <li>
-                                            <strong>Local Area :</strong>
-                                            <span>Access Via Anchorage Road</span>
-                                        </li>
-                                        <li>
-                                            <strong>Larger Area :</strong>
-                                            <span>Sutton Coldfield </span>
-                                        </li>
-                                        <li>
-                                            <strong>Country :</strong>
-                                            <span> <img
-                                                    src="https://www.masjid-timetable.com/admin/assets/img/flags/uk.png"
-                                                    alt=""> United Kingdom</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="more-btn">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal"> More Details
-                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
                                     </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!---End masjid data-->
-                    </div>
-                    <!---End col -->
-
-                    <div class="col-md-4">
-                        <div class="masjid-data-card">
-                            <figure>
-                                <a href="#">
-                                    <img width="570" height="300"
-                                        src="assets/images/masjid/masjid-img1.jpg"
-                                        class="masjid-image " alt="">
-                                </a>
-                            </figure>
-                            <div class="masjid-desc">
-                                <div class="text-sec">
-                                    <h4><a href="#" data-toggle="modal" data-target="#exampleModal">masjid name</a></h4>
-                                    <h5> <i class="fas fa-street-view"></i> location</h5>
-                                    <ul>
-                                        <li>
-                                            <strong>Local Area :</strong>
-                                            <span>Access Via Anchorage Road</span>
-                                        </li>
-                                        <li>
-                                            <strong>Larger Area :</strong>
-                                            <span>Sutton Coldfield </span>
-                                        </li>
-                                        <li>
-                                            <strong>Country :</strong>
-                                            <span> <img
-                                                    src="https://www.masjid-timetable.com/admin/assets/img/flags/uk.png"
-                                                    alt=""> United Kingdom</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="more-btn">
-                                    <a href="#" data-toggle="modal" data-target="#exampleModal"> More Details
-                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
                                     </a>
-
-                                </div>
-                            </div>
-                        </div>
-                        <!---End masjid data-->
-                    </div>
-                    <!---End col -->
-                </div>
-                <!---End row-->
-
-                <!------Start pagination-->
-                <div class="md-pagination">
-                    <span aria-current="page" class="page-numbers current">1</span>
-
-                    <a class="page-numbers" href="#">2</a>
-
-                    <a class="next page-numbers" href="#">
-                        Next
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Masjid Name</td>
+                                <td>local Aream</td>
+                                <td>Tokyo</td>
+                                <td>United Kingdom</td>
+                                
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                        <i class="fas fa-plus-circle"></i></a>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!---End container-->
@@ -499,7 +416,7 @@
                                 </div>
                                 <div id="timetable" class="tab-content">
                                     <div class="table-responsive">
-                                        <table class="table table-dark table-hover timetable">
+                                        <table class="table table-dark table-hover timetable ">
                                             <thead>
                                                 <tr align="center">
                                                     <td></td>
@@ -845,7 +762,8 @@
                                                     <td>4:00</td>
                                                     <td>5:23</td>
                                                     <td>7:30</td>
-                                                    <td></td>
+                                                    <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i
+                                                                class="fas fa-plus-circle"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>19</td>
@@ -860,7 +778,8 @@
                                                     <td>4:00</td>
                                                     <td>5:25</td>
                                                     <td>7:30</td>
-                                                    <td></td>
+                                                    <td><a href="#" data-toggle="modal" data-target="#exampleModal"><i
+                                                                class="fas fa-plus-circle"></i></a></td>
                                                 </tr>
                                                 <tr>
                                                     <td>20</td>
@@ -1108,9 +1027,9 @@
                 <div class="col-xs-6 col-md-3">
                     <h6>Quick Links</h6>
                     <ul class="footer-links">
-                        <li><a href="#">Masjid Data</a></li>
-                        <li><a href="#">Learning Center</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModal">Masjid Data</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModal">Learning Center</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModal">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -1128,9 +1047,9 @@
                             <img src="assets/images/icons/skype.svg" alt="icon">
                             <span>Skype: <i id="skype-id">webkept</i></span>
                         </li>
-                        <!-- <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
-                        <!-- <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li> -->
-                        <!-- <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                        <!-- <li><a class="facebook" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-facebook"></i></a></li> -->
+                        <!-- <li><a class="dribbble" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-dribbble"></i></a></li> -->
+                        <!-- <li><a class="linkedin" href="#" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-linkedin"></i></a></li> -->
                     </ul>
                 </div>
             </div>
@@ -1156,6 +1075,8 @@
     <!-- <script src="assets/js/waypoints.min.js"></script> -->
     <script src="assets/js/jquery.form.js"></script>
     <script src="assets/js/jquery.validate.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script> -->
+    <script type="text/javascript" src="assets/datatable/jquery.dataTables.min.js"></script>
     <!-- custom js -->
     <script src="assets/js/custom.js"></script>
 </body>

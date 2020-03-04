@@ -2227,7 +2227,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #3445b4;
+  color: #2491ba;
 }
 
 a:hover,
@@ -2652,7 +2652,7 @@ textarea {
 }
 
 textarea:focus, input:focus {
-  border-color: transparent !important;
+  /* border-color: transparent !important; */
 }
 
 input:focus::-webkit-input-placeholder { color:transparent; }
