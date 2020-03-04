@@ -20,7 +20,7 @@
     navText: false,
   });
 
-  $('.active').addClass('anim');
+  $('.banner_part .active').addClass('anim');
 
   // var owlItem = $('.owl-item'),
   // owlLen = owlItem.length;

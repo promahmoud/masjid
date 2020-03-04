@@ -895,7 +895,7 @@ ul {
 /* animate content */
 .owl-item.active .slide-content {
   transform: translate(-20%, 0%) rotate3d(1, 0, 0, 0);
-  transition-delay: .7s
+  transition-delay: .7s;
 }
 
 .owl-item.active h3,
